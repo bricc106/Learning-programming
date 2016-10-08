@@ -10,6 +10,7 @@
 #include <iostream>
 #include <cmath>
 #include <string>
+#include <iomanip>
 
 using namespace std;
 
@@ -65,9 +66,10 @@ switch (woodType)
 
    costDrawers = drawers * 30;
    deskcost += costDrawers;
-   cout << customername << ", ";
+   cout << setfill('-')<<endl;
+   cout << setw(10) << customername << ", ";
    cout << "your desk estimate is ";
-   cout << deskcost <<endl;
+   cout << setw(10) << deskcost <<endl;
 
 return 0;
 
